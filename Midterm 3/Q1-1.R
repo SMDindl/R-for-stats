@@ -23,7 +23,7 @@ p2 <- rep(pw, times = length(w))
 p <- p1 * p2
 y <- (w1 + 2 * w2) / 2
 # Calculate z based on the condition and include it in the table
-z <- ifelse(w1 > 2 * w2, w1, 2 * w2)
+z <- ifelse(w1 > w2, w1, w2)
 
 # Print table of results
 table <- data.frame(
@@ -33,8 +33,25 @@ table <- data.frame(
 
 print(table, row.names = FALSE)
 
-# table <- data.frame(y)
+# # table <- data.frame(y)
+# # print(table, row.names = FALSE)
+
+# table <- data.frame(z)
 # print(table, row.names = FALSE)
 
-table <- data.frame(z)
-print(table, row.names = FALSE)
+# create culmulative for each Y value
+y_values <- sort(unique(y))
+print(y_values)
+y_probabilities <- sapply(y_values, function(y_val) {
+  sum <- sum(p[y == y_val])
+  print(sum)
+})
+# Print the sampling distribution of Y
+sampling_distribution <- data.frame(
+  y = y_values,
+  probability = y_probabilities
+)
+print(sampling_distribution, row.names = FALSE)
+
+print(y_values)
+print(y_probabilities)
