@@ -4,10 +4,25 @@ print_line <- function() {
   cat(line, "\n")
 }
 
+sink("Midterm-3/Q3.txt")
+
 n <- 7
 pair <-	c(1,	2,	3,	4,	5,	6,	7)
 diet_1 <-	c(559,	360,	524,	445,	583,	418,	538)
 diet_2 <-	c(489,  422,  468,  485,  503,  525,  593)
+
+cat("Hand calculations:\n")
+x2 <- mean(diet_1)
+x1 <- mean(diet_2)
+cat("Mean of diet 2 (x1):", x1, "\n")
+cat("Mean of diet 1 (x2):", x2, "\n")
+
+cat("Mean difference (x1 - x2):", x1 - x2, "\n")
+cat("variance of diet 2 (s1^2):", var(diet_2), "\n")
+cat("variance of diet 1 (s2^2):", var(diet_1), "\n")
+cat("Standard deviation of diet 2 (s1):", sd(diet_2), "\n")
+cat("Standard deviation of diet 1 (s2):", sd(diet_1), "\n")
+
 
 # Question 3 - A
 print("Question 3 - A")
@@ -64,3 +79,5 @@ cat("\n")
 # c) State the assumptions needed for this test and interval to be valid.
 # d) What are the consequences of violating the normality assumption? 
 # What alternatives could you use?
+
+sink()

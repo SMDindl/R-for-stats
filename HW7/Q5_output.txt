@@ -1,0 +1,87 @@
+Data Reference:
+[1] 0.9357983
+[1] 20.63021
+[1] 64.53125
+[1] "t_value"
+[1] 2.570582
+[1] 0.1407344
+[1] "CI"
+[1] 0.5740308
+[1] 1.297569
+[1] "C "
+[1] 1892.23
+[1] "D"
+[1] 909.6402
+[1] 32.32191
+[1] "CI"
+[1] 826.5539
+[1] 992.7261
+Reference Values for Manual Calculations:
+Mean of size: 1053.429 
+Mean of rent: 1006.429 
+SSxx: 210243.7 
+SSyy: 204935.7 
+SSxy: 196745.7 
+Correlation coefficient (r): 0.9478398 
+Coefficient of determination (R²): 0.8984003 
+Slope (b1): 0.9357983 
+Intercept (b0): 20.63189 
+SSE (Sum of Squared Errors): 20821.41 
+Residual Standard Error (RSE): 64.53124 
+Standard Error of the Slope (SE): 0.1407371 
+t-value (95% confidence, df = n - 2): 2.570582 
+95% Confidence Interval for the Slope: 0.5740222 to 1.297574 
+
+Model Summary:
+
+Call:
+lm(formula = rent ~ size)
+
+Residuals:
+      1       2       3       4       5       6       7 
+  46.51   44.06  -48.57   22.05   57.01  -19.96 -101.10 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  20.6319   150.2494   0.137  0.89614   
+size          0.9358     0.1407   6.649  0.00116 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 64.53 on 5 degrees of freedom
+Multiple R-squared:  0.8984,	Adjusted R-squared:  0.8781 
+F-statistic: 44.21 on 1 and 5 DF,  p-value: 0.00116
+
+---------------------------------------- 
+Question 5 - B
+Intercept and Slope Interpretation:
+Intercept (b0): 20.63189 
+Slope (b1): 0.9357983 
+Interpretation: For each additional square foot of size, 
+rent increases by 0.9357983 dollars.
+When the size is 0, the rent is 20.63189 dollars (though this may not be meaningful in context).
+---------------------------------------- 
+Question 5 - C
+Predicted rent for size = 2000: 1892.229 
+Explanation: This is an extrapolation beyond the 
+range of the data (size = 820 to 1288).
+The model may not be reliable for sizes outside 
+the observed range.
+---------------------------------------- 
+Question 5 - D
+Predicted rent for size = 950: 909.6403 
+Residual (actual - predicted): 90.35971 
+The model is underestimating the rent.
+---------------------------------------- 
+Question 5 - E
+95% Confidence Interval for the slope: 0.5740222 to 1.297574 
+Interpretation: We are 95% confident that the true 
+increase in rent per square foot lies within this range.
+---------------------------------------- 
+Question 5 - F
+95% Confidence Interval for the mean rent when size = 950:
+Lower bound: 836.6258 
+Upper bound: 982.6548 
+Interpretation: We are 95% confident that the 
+average rent for apartments of size 950 lies within this range.
+---------------------------------------- 

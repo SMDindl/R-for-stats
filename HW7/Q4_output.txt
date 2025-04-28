@@ -1,0 +1,59 @@
+Question 4 - A
+---------------------------------------- 
+
+Call:
+lm(formula = y ~ x)
+
+Residuals:
+      1       2       3       4       5       6       7 
+-17.146 -17.146   9.513   7.513  36.945  36.831 -56.510 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   32.010     49.568   0.646    0.547
+x              5.114      3.174   1.611    0.168
+
+Residual standard error: 36.47 on 5 degrees of freedom
+Multiple R-squared:  0.3417,	Adjusted R-squared:   0.21 
+F-statistic: 2.595 on 1 and 5 DF,  p-value: 0.1681
+
+linear correlation coefficient: 0.584555 
+Correlation test:
+
+	Pearson's product-moment correlation
+
+data:  x and y
+t = 1.611, df = 5, p-value = 0.1681
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.3010079  0.9287665
+sample estimates:
+     cor 
+0.584555 
+
+---------------------------------------- 
+Question 4 - B
+---------------------------------------- 
+Coefficient of determination: 0.3417046 
+---------------------------------------- 
+Question 4 - C
+---------------------------------------- 
+Least-squares estimates for the regression line:
+             Estimate Std. Error  t value  Pr(>|t|)
+(Intercept) 32.009740  49.567565 0.645780 0.5468855
+x            5.113636   3.174168 1.611017 0.1680924
+Slope: y increases by 5.113636 per unit of x.
+Intercept: y is 32.00974 when x = 0.
+---------------------------------------- 
+Question 4 - D
+---------------------------------------- 
+Predicted y for x = 15: 108.7143 
+Residual (actual - predicted): 41.28571 
+---------------------------------------- 
+Question 4 - E
+---------------------------------------- 
+90% Confidence Interval for the slope: -1.282465 to 11.50974 
+We are 90% confident that the true increase 
+in y per unit increase in x lies within this range.
+P-value for the slope: 0.1680924 
+---------------------------------------- 

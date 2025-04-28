@@ -7,41 +7,36 @@ x <- c(2.78, 3.82, 3.16, 3.53, 2.96, 3.37)
 y <- c(2.95, 3.64, 3.55, 3.89, 3.06, 3.31)
 
 
-### Scatterplot #### 
+### Scatterplot ####
 
 plot(x, y, main = "Scatterplot of High vs College GPAs")
-abline(lm(y~x), col = "darkgreen")
+abline(lm(y ~ x), col = "darkgreen")
 
 
-
-### Correlation Coefficient (r) #### 
+### Correlation Coefficient (r) ####
 
 cor(x, y)
 
-cor.test(x, y)## Gives you more information 
+cor.test(x, y) ## Gives you more information
 
 
+### Simple Linear Regression ####
 
-### Simple Linear Regression #### 
-
-summary(lm(y~x)) 
-
+summary(lm(y ~ x))
 
 
-### Confidence Interval #### 
+### Confidence Interval ####
 
-confint(lm(y~x),level=0.95)
-
+confint(lm(y ~ x), level = 0.95)
 
 
 ### Confidence Interval for the Population Mean #####
 
-predict(lm(y~x),data.frame(x=3.20), level=0.95, interval="confidence")
-
+predict(lm(y ~ x), data.frame(x = 3.20), level = 0.95, interval = "confidence")
 
 
 ### Confidence Interval for the Population Mean #####
 
-predict(lm(y~x),data.frame(x=3.20), level=0.95, interval="prediction")
+predict(lm(y ~ x), data.frame(x = 3.20), level = 0.95, interval = "prediction")
 
-predict(lm(y~x),data.frame(x=1.85), level=0.95, interval="prediction")
+predict(lm(y ~ x), data.frame(x = 1.85), level = 0.95, interval = "prediction")

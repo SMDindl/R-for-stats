@@ -1,0 +1,6 @@
+Democrats proportion:  0.2 
+Republicans proportion:  0.35 
+-------------------------------------------------- 
+Question 4 - A 
+Test statistic: z =  -5.268126 
+p-value:  1.378237e-07 
