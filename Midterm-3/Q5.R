@@ -44,12 +44,25 @@ p1 <- democrats_proportion
 p2 <- republicans_proportion
 p_hat <- (democrats_very_serious + republicans_very_serious) /
   (democrats + republicans)
+
 n1 <- democrats
 n2 <- republicans
+
+cat("p1 - p2: ", p1 - p2, "\n")
+
+nerm <- (0.20 * 635) + (0.35 * 372)
+demom <- (635 + 372)
+frac <- nerm / demom
+print(frac)
+
+# calulcate pooled and unpooled SE
 
 z <- (p1 - p2) / sqrt(p_hat * (1 - p_hat) * (1 / n1 + 1 / n2))
 cat("Test statistic: z = ", z, "\n")
 cat("p-value: ", 2 * (1 - pnorm(abs(z))), "\n")
+# calulcate pooled and unpooled SE
+cat("Pooled SE: ", sqrt(p_hat * (1 - p_hat) * (1 / n1 + 1 / n2)), "\n")
+cat("Unpooled SE: ", sqrt(p1 * (1 - p1) / n1 + p2 * (1 - p2) / n2), "\n")
 
 
 

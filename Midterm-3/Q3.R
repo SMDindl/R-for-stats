@@ -12,16 +12,17 @@ diet_1 <-	c(559,	360,	524,	445,	583,	418,	538)
 diet_2 <-	c(489,  422,  468,  485,  503,  525,  593)
 
 cat("Hand calculations:\n")
-x2 <- mean(diet_1)
-x1 <- mean(diet_2)
-cat("Mean of diet 2 (x1):", x1, "\n")
-cat("Mean of diet 1 (x2):", x2, "\n")
 
-cat("Mean difference (x1 - x2):", x1 - x2, "\n")
-cat("variance of diet 2 (s1^2):", var(diet_2), "\n")
-cat("variance of diet 1 (s2^2):", var(diet_1), "\n")
-cat("Standard deviation of diet 2 (s1):", sd(diet_2), "\n")
-cat("Standard deviation of diet 1 (s2):", sd(diet_1), "\n")
+diet_difference <- diet_2 - diet_1
+cat("Diet difference:", diet_difference, "\n")
+mean_difference <- mean(diet_difference)
+cat("Mean difference:", mean_difference, "\n")
+cat("Standard deviation of diet difference:", sd(diet_difference), "\n")
+
+df <- 6
+e <- .10 / 2
+t_critical <- qt(1 - e, df)
+cat("Critical t-value (t_critical):", t_critical, "\n")
 
 
 # Question 3 - A
@@ -31,7 +32,7 @@ print_line()
 # for the mean difference between the diets.
 
 # Calculate the differences
-differences <- diet_1 - diet_2
+differences <- diet_2 - diet_1
 
 # Perform a t-test for paired samples
 t_test_result <- t.test(differences, conf.level = 0.90)

@@ -1,28 +1,25 @@
 Hand calculations:
-Mean of diet 2 (x1): 497.857142857143 
-Mean of diet 1 (x2): 489.571428571429 
-Mean difference (x1 - x2): 8.28571428571428 
-variance of diet 2 (s1^2): 2784.14285714286 
-variance of diet 1 (s2^2): 6829.61904761905 
-Standard deviation of diet 2 (s1): 52.7649775622321 
-Standard deviation of diet 1 (s2): 82.6415092288315 
+Diet difference: -70 62 -56 40 -80 107 55 
+Mean difference: 8.28571428571429 
+Standard deviation of diet difference: 75.1370176981455 
+Critical t-value (t_critical): 1.9431802805153 
 [1] "Question 3 - A"
 ---------------------------------------- 
 90% Confidence Interval for the Mean Difference:
-Lower Bound: -63.470330661853 
-Upper Bound: 46.8989020904245 
-Mean Difference: -8.28571428571429 
+Lower Bound: -46.8989020904245 
+Upper Bound: 63.470330661853 
+Mean Difference: 8.28571428571429 
 
 	One Sample t-test
 
 data:  differences
-t = -0.2917595095749, df = 6, p-value = 0.780295188122
+t = 0.2917595095749, df = 6, p-value = 0.780295188122
 alternative hypothesis: true mean is not equal to 0
 90 percent confidence interval:
- -63.4703306618530  46.8989020904245
+ -46.8989020904245  63.4703306618530
 sample estimates:
-        mean of x 
--8.28571428571429 
+       mean of x 
+8.28571428571429 
 
 [1] "Question 3 - B"
 ---------------------------------------- 
